@@ -1,0 +1,24 @@
+diff --git a/authenticator.py b/authenticator.py
+index 510aa1f..beccdf6 100755
+--- a/authenticator.py
++++ b/authenticator.py
+@@ -40,6 +40,7 @@ import urllib.request
+ import tldextract
+ import untangle
+
++sys.path.append('/etc/namesilo-letsencrypt')
+ from config import apikey, wait
+
+
+diff --git a/cleanup.py b/cleanup.py
+index c15d05c..9bf05aa 100755
+--- a/cleanup.py
++++ b/cleanup.py
+@@ -39,6 +39,7 @@ import urllib.request
+ import tldextract
+ import untangle
+
++sys.path.append('/etc/namesilo-letsencrypt')
+ from config import apikey
+
+ domain = os.environ['CERTBOT_DOMAIN']
